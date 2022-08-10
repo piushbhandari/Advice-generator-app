@@ -9,8 +9,30 @@
     <title>^___^</title>
   </head>
   <body>
-    Advice #<!-- Advice ID goes here -->
+    <main class="main">
+      <p class="main__loading-notif">Looooadiiiing....</p>
 
-    "<!-- Advice text goes here -->"
+      <h1 class="main__advice-count">Advice # <span class="count"></span></h1>
+      <p class="main__advice">"<span class="advice"></span>"</p>
+      <div class="main__divider main__divider--desktop">
+        <img
+          class="fit-image"
+          src="./images/pattern-divider-desktop.svg"
+          alt="divider"
+        />
+      </div>
+      <div class="main__divider main__divider--mobile">
+        <img
+          class="fit-image"
+          src="./images/pattern-divider-mobile.svg"
+          alt="divider"
+        />
+      </div>
+      <button class="main__btn newBtn flex-center">
+        <img src="./images/icon-dice.svg" alt="dice" />
+      </button>
+    </main>
+
+    <script src="./script.js"></script>
   </body>
 </html>

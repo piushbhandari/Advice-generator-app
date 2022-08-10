@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Manrope", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+button {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+a,
+button {
+  transition: 0.3s ease-in-out;
+}
+.flex {
+  display: flex;
+}
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+.align-center {
+  display: flex;
+  align-items: center;
+}
+.align-start {
+  display: flex;
+  align-items: flex-start;
+}
+.fit-image {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #202733;
+  padding: 0 1.6rem;
+}
+.main {
+  position: relative;
+  text-align: center;
+  padding: 4.8rem;
+  padding-bottom: 7.2rem;
+  border-radius: 15px;
+  background: #313a48;
+  box-shadow: 30px 50px 80px rgba(0, 0, 0, 0.100202);
+}
+.main__advice-count {
+  color: #53ffaa;
+  font-weight: 800;
+  font-size: 1.3rem;
+  line-height: 1.8rem;
+  letter-spacing: 4.08571px;
+  text-transform: uppercase;
+  margin-bottom: 2.4rem;
+}
+.main__advice {
+  max-width: 44.4rem;
+  color: #cee3e9;
+  font-weight: 800;
+  font-size: 2.8rem;
+  line-height: 3.8rem;
+  letter-spacing: -0.3px;
+  margin-bottom: 4rem;
+}
+.main__btn {
+  background-color: #53ffaa;
+  border-radius: 50%;
+  width: 6.4rem;
+  height: 6.4rem;
+  position: absolute;
+  bottom: -3.2rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.main__btn:hover,
+.main__btn:focus {
+  background: #53ffaa;
+}
+.main__loading-notif {
+  color: white;
+  font-size: 2.6rem;
+  display: none;
+}
+.main__loading-notif.active {
+  display: block;
+}
+.main__divider {
+  max-width: 44.4rem;
+}
+.main__divider--mobile {
+  display: none;
+}
+@media all and (max-width: 577px) {
+  body {
+    min-height: fit-content;
+    padding: 12rem 1.6rem 20rem 1.6rem;
+    display: block;
+  }
+}
+@media all and (max-width: 400px) {
+  .main__advice-count {
+    font-size: 1.1rem;
+    line-height: 1.8rem;
+    letter-spacing: 3.45714px;
+  }
+  .main {
+    padding: 4rem 2.4rem 6.4rem 2.4rem;
+  }
+  .main__advice {
+    max-width: 44.4rem;
+    color: #cee3e9;
+    font-weight: 800;
+    font-size: 2.8rem;
+    line-height: 3.8rem;
+    letter-spacing: -0.3px;
+    margin-bottom: 4rem;
+  }
+  .main__advice {
+    font-size: 2.4rem;
+    line-height: 3.3rem;
+    letter-spacing: -0.257143px;
+    margin-bottom: 2.4rem;
+  }
+  .main__divider--desktop {
+    display: none;
+  }
+  .main__divider--mobile {
+    display: block;
+  }
+}
