@@ -91,6 +91,7 @@ body {
   line-height: 3.8rem;
   letter-spacing: -0.3px;
   margin-bottom: 4rem;
+  overflow-wrap: break-word;
 }
 .main__btn {
   background-color: #53ffaa;
