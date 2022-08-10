@@ -10,10 +10,13 @@ newBtn.addEventListener("click", getAdvice);
 
 function getAdvice(e) {
   e.preventDefault();
+  newBtn.disabled = true;
+
   fetchApi().then((s) => {
     const { id, advice } = s.slip;
     adviceNumber.textContent = id;
     adviceText.textContent = advice;
+    newBtn.disabled = false;
   });
 }
 async function fetchApi() {
