@@ -65,6 +65,7 @@ body {
   padding: 0 1.6rem;
 }
 .main {
+  animation: slideInRight 1s;
   position: relative;
   text-align: center;
   padding: 4.8rem;
@@ -103,7 +104,7 @@ body {
 }
 .main__btn:hover,
 .main__btn:focus {
-  background: #53ffaa;
+  box-shadow: 0px 0px 40px #53ffaa;
 }
 .main__loading-notif {
   color: white;
@@ -155,5 +156,20 @@ body {
   }
   .main__divider--mobile {
     display: block;
+  }
+}
+
+@keyframes slideInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(90rem);
+  }
+  75% {
+    opacity: 0.75;
+    transform: translateX(-30rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0rem);
   }
 }

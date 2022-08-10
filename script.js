@@ -2,6 +2,7 @@ const newBtn = document.querySelector(".newBtn");
 const adviceNumber = document.querySelector(".count");
 const adviceText = document.querySelector(".advice");
 const loadingNotif = document.querySelector(".main__loading-notif");
+const adviceContainer = document.querySelector(".main__advice");
 let apiUrl = "https://api.adviceslip.com/advice";
 
 window.addEventListener("DOMContentLoaded", getAdvice);
